@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="research-grid.css">
+        <link rel="stylesheet" href="footer.css">
+        <script src="https://kit.fontawesome.com/3929e16ef5.js" crossorigin="anonymous"></script>
+        <script src="{% static 'network/functions.js' %}"></script>
+        <script>
+            function handleHover(color, iconID, textID, border) {
+                document.getElementById(iconID).style.color = color;
+                if (border) {
+                    document.getElementById(textID).style.borderBottom = '2px solid #eb6500';
+                } else {
+                    document.getElementById(textID).style.borderBottom = '2px solid #eb660000'
+                }
+            }  
+        </script>
+        <title>Machine Learning</title>
+    </head>
+    <body>
+        <div id="navbar" class="flex large-screen">
+            <div id="left-navbar" class="flex">
+                <div id="logo-container">
+                    <img id="logo" src="./misc files/Screenshot 2024-02-16 at 00.05.10.png">
+                </div>
+                <div style="color: #eb6500; flex-shrink: 0;" >The Dev Forum</div>
+            </div>
+            <div id="center-navbar" class="flex">
+                <input class="search-bar" placeholder="Search Literature">
+                <button class="search-button">
+                    <div id="icon-container">
+                        <i id="search-icon" class="fa fa-search"></i>
+                    </div>
+                </button>
+            </div>
+            <div id="right-navbar" class="flex">
+                <a class="button-link">
+                    Journals & Books
+                </a>
+                <a class="button-link">
+                    FAQ's
+                </a>
+                <a class="button-link">
+                    Contact
+                </a>
+                <button id="sign-up" class="default-button blue-button">Get updates</button>
+            </div>
+        </div>
+        
+        <div id="navbar" class="flex small-screen">
+            <div id="left-navbar" class="flex">
+                <div id="logo-container">
+                    <img id="logo" src="./misc files/Screenshot 2024-02-16 at 00.05.10.png">
+                </div>
+                <div style="color: #eb6500; flex-shrink: 0;" >The Dev Forum</div>
+            </div>
+            <div id="right-navbar" class="flex">
+                <div class="flex">
+                    <input class="search-bar" placeholder="Search Literature">
+                    <button class="search-button">
+                        <div id="icon-container">
+                            <i id="search-icon" class="fa fa-search"></i>
+                        </div>
+                    </button>
+                </div>
+                <div id="icon-container">
+                    <i id="bar-icon" class="fa fa-bars"></i>
+                </div>
+            </div>
+        </div>
+
+        <div id="navbar" class="flex smaller-screen">
+            <div id="left-navbar" class="flex">
+                <div id="logo-container">
+                    <img id="logo" src="./misc files/Screenshot 2024-02-16 at 00.05.10.png">
+                </div>
+                <div style="color: #eb6500; flex-shrink: 0;" >The Dev Forum</div>
+            </div>
+            <div id="right-navbar" class="flex">
+                <div id="icon-container">
+                    <i id="search-icon" class="fa fa-search"></i>
+                </div> 
+                <div id="icon-container">
+                    <i id="bar-icon" class="fa fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <div id="header">
+            <div id="header-text-container" class="flex">
+                <div style="display: inline-block">
+                    <div id="title">Machine Learning</div>
+                    <p>Machine learning (ML) is one of the main modeling paradigms that is the focus of hydroinformatics.</p>
+                    <p>From: <span class="default-link">Handbook of Hydroinformatics, 2023</span></p>
+                </div>
+                <div style="display: inline-block">
+                    <p class="medium-text">Related terms:</p>
+                    <p>
+                        <a class="default-link medium-text">Artificial Neural Network</a>, 
+                        <a class="default-link medium-text">  Data Transmission</a>, 
+                        <a class="default-link medium-text">  Artificial Intelligence</a>, 
+                        <a class="default-link medium-text">  Genetic Algorithm</a>, 
+                        <a class="default-link medium-text">  Microplastics</a>
+                    </p>
+                </div>
+                <hr />
+                <div class="button-container flex">
+                    <div class="h_container" onmouseover="handleHover('#eb6500', 'heart', 'icon-button-link', true)" onmouseout="handleHover('#47afeb', 'heart', 'icon-button-link', false)">
+                        <i id="heart" class="far fa-heart"></i>
+                        <p id="icon-button-link" class="inline">Add to favorites</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="research-grid">
+            <div>
+                <div class="research-title big-text">Machine learning in life cycle assessment</div>
+                <div class="author-list xsmall-text">Mikaela Algren, ... Amy E. Landis, in</div>
+                <a class="category default-link xsmall-text">Data Science Applied to Sustainability Analysis</a>
+                <div class="year xsmall-text">, 2021</div>
+                <div class="chapter-title medium-text">Introduction to machine learning (ML)</div>
+                <div class="content small-text"><span style="text-decoration: underline;">Machine learning</span> (ML) is a statistical approach to studying and making inferences about data that utilizes a variety of algorithms suited for answering different types of questions. There are three main types of ML: supervised, unsupervised, and reinforcement learning. In supervised learning, ML algorithms can be used to model relationships between one or more independent variables and a dependent variable. In unsupervised learning, algorithms find meaningful patterns in datasets or sort data into groups. Reinforcement learning ML algorithms produce optimized plans or courses of action given a set of constraints or a reward system. These three main types of ML, supervised, unsupervised, and reinforcement learning, are described in the following sections. Other topics discussed are shallow and deep learning, how to choose between algorithm types based on the dataset or intended application, and common <span style="text-decoration: underline;">machine learning</span> tools.</div>
+                <div style="margin-top: 20px;">
+                    <button class="default-button blue-button">View Chapter</button>
+                    <button class="default-button white-button">Explore Book</button>
+                </div>
+                
+            </div>
+            <div>
+                <div class="research-title big-text">Machine Learning in Geosciences</div>
+                <div class="author-list xsmall-text">Jesper Sören Dramsch, in</div>
+                <a class="category default-link xsmall-text">Advances in Geophysics</a>
+                <div class="year xsmall-text">, 2020</div>
+                <div class="chapter-title medium-text">Abstract</div>
+                <div class="content small-text"><span style="text-decoration: underline;">Machine learning</span> (ML) is deeply rooted in applied statistics, building computational models that use inference and pattern recognition instead of explicit sets of rules. <span style="text-decoration: underline;">Machine learning</span> is generally regarded as a subfield of artificial intelligence (AI), with the notion of AI first being introduced by Turing (1950). Samuel (1959) coined the term <span style="text-decoration: underline;">machine learning</span> itself, with Mitchell et al. (1997) providing a commonly quoted definition:
+                    A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P if its performance at tasks in T, as measured by P, improves with experience E.
+                    Mitchell et al. (1997)</div>
+                <div style="text-align: center; margin-top: 20px; width: 85%">
+                    <img src="./misc files/geosciences-12-00424-ag.png" style="padding: 10px 10px; border: 2px solid black; width: 100%; height: auto">
+                    <p style="font-size: xx-small; color: rgb(125, 125, 125);">&copy; to MDPI (2022)</p>
+                </div>
+                <div style="margin-top: 20px;">
+                    <button class="default-button blue-button">View Chapter</button>
+                    <button class="default-button white-button">Explore Book</button>
+                </div>
+                    
+            </div>
+            <div>
+                <div class="research-title big-text">Wind speed forecasting in Nepal using self-organizing map-based online sequential extreme learning machine
+                </div>
+                <div class="author-list xsmall-text">Neelesh Sharma, Ravinesh Deo, in</div>
+                <a class="category default-link xsmall-text">Predictive Modelling for Energy Management and Power Systems Engineering</a>
+                <div class="year xsmall-text">, 2021</div>
+                <div class="chapter-title medium-text">14.2.4 Extreme learning machine</div>
+                <div class="content small-text">Lazarevska (2016) and Syed and Aggarwal (2016) used a standalone ELM which was tested against existing persistence models. Lazarevska (2016) used RMSE for wind predictions whereas Syed and Aggarwal (2016) used MAE for hourly to 12-hourly predictions. Lazarevska (2016) outlined that the performance of a traditional ELM depends on randomness mechanism, that is, as the ELM parameters are randomly chosen an uncertainty problem arises and it’s difficult to know if the model has the best solution. To solve the issue, the paper used using an iterative model design where the model error is compared to the desired error tolerance. Syed and Aggarwal (2016) based their studies on three wind farms of Ontario, Canada. The paper used three parameters: wind speed, wind direction, and wind power, as inputs. The study showed that the ELM model outperformed the persistence models for 12-hour predictions with MAE ranging from 5 to 21 for the three sites. The paper showed that the MAE for both the methods increased successively as hours increased from 1 to 12. The paper concluded that ELM is notably fast and doesn’t encounter local minima and overfitting, it also tends to reach the smallest training error and reaches the smallest norm of weights, unlike traditional gradient-based learning algorithms.</div>
+                <div style="text-align: center; margin-top: 20px; width: 85%">
+                    <img src="./misc files/Anemometer-Animation.gif" style="padding: 10px 10px; border: 2px solid black; width: 50%; height: auto">
+                    <p style="font-size: xx-small; color: rgb(125, 125, 125); ">&copy; to Wikipedia (2007)</p>
+                </div>
+                <div style="margin-top: 20px;">
+                    <button class="default-button blue-button">View Chapter</button>
+                    <button class="default-button white-button">Explore Book</button>
+                </div>
+            </div>
+                
+            
+            <div>
+                <div class="research-title big-text">Learning in Big Data: Introduction to Machine Learning</div>
+                <div class="author-list xsmall-text">Khadija El Bouchefry PhD, Rafael S. de Souza PhD, in</div>
+                <a class="category default-link xsmall-text">Knowledge Discovery in Big Data from Astronomy and Earth Observation</a>
+                <div class="year xsmall-text">, 2020</div>
+                <div class="chapter-title medium-text">12.4.3 Simple Case Study in Geology: Supervised Classification of Lithology</div>
+                <div class="content small-text">ML algorithms are programs of data-driven inference tools that offer an automated means of recognizing patterns in high-dimensional data. Hence, there is much scope for the application of ML algorithms to the rapidly increasing volumes of remotely sensed geophysical data for geological mapping and other problems.
+                    Cracknell and Reading (2014) carried out a rigorous comparison of five ML algorithms, representing the five general learning strategies: NB statistical learning algorithms, kNN instance-based learners, RF logic-based learners, SVMs, and ANNs – Perceptrons (Kotsiantis, 2007). This was undertaken in the context of a supervised lithology classification task using widely available and spatially constrained remotely sensed geophysical data. They make a further comparison of ML algorithms based on their sensitivity to variations in the degree of spatial clustering of training data, and their response to the inclusion of explicit spatial information (spatial coordinates).
+                    The work identifies RF as a good first choice algorithm for the supervised classification of lithology using remotely sensed geophysical data. RF is straightforward to train, computationally efficient, highly stable with respect to variations in classification model parameter values, and as accurate as, or substantially more accurate than, the other ML algorithms trialed. The results of the study indicate that as training data become increasingly dispersed across the region under investigation, ML algorithms' predictive accuracy improves dramatically. The use of explicit spatial information generates accurate lithology predictions but should be used in conjunction with geophysical data in order to generate geologically plausible predictions. ML algorithms, such as RF, are valuable tools for generating reliable first-pass predictions for practical geological mapping applications that combine widely available geophysical data.
+                </div>
+                <div style="margin-top: 20px;">
+                    <button class="default-button blue-button">View Chapter</button>
+                    <button class="default-button white-button">Explore Book</button>
+                </div>
+            </div>
+            <div>
+                <div class="research-title big-text">Tutorial: how to access, process, and label PDS image data for machine learning
+                </div>
+                <div class="author-list xsmall-text">Steven Lu, ... Jordan Padams, in</div>
+                <a class="category default-link xsmall-text">Machine Learning for Planetary Science</a>
+                <div class="year xsmall-text">, 2022</div>
+                <div class="chapter-title medium-text">5.1 Introduction</div>
+                <div class="content small-text"><span style="text-decoration: underline;">Machine learning</span> methods have been used to achieve new advances in image analysis and classification problems that range from genetics [1] to materials science [2] to crop yield prediction and other agricultural applications [3]. In addition to these terrestrial applications, there is growing interest in the application of the same methods to images collected on other planets and bodies in support of space exploration. However, it can be difficult to know where and how to access these images, and they are often stored in data formats that are unfamiliar to the <span style="text-decoration: underline;">machine learning</span> community. This tutorial aims to facilitate <span style="text-decoration: underline;">machine learning</span> projects that can make use of the more than 700 TB (and growing) of NASA planetary science images.
+                    Images collected by NASA planetary science missions are curated by the Cartography and Imaging Sciences Discipline Node (Imaging Node) of the Planetary Data System (PDS). These holdings currently include more than 34 million products that span 22 missions, with targets that include the Moon, Jupiter, and Venus. Some example images are shown in Fig. 5.1.</div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Moon, Orbiter 1 (1996)</th>
+                            <th>Jupiter, Voyager 2 (1979)</th>
+                            <th>Venus, Magellan (1991)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="./misc files/Screenshot 2024-02-15 at 23.36.18.png">
+                            </td>
+                            <td>
+                                <img src="./misc files/Screenshot 2024-02-15 at 23.36.26.png">
+                            </td>
+                            <td>
+                                <img src="./misc files/Screenshot 2024-02-15 at 23.36.35.png">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div style="text-align: center; margin-top: 5px;">
+                    <p style="font-size: xx-small; color: rgb(125, 125, 125); ">&copy; to ScienceDirect (2023)</p>
+                </div>
+                <div style="margin-top: 20px;">
+                    <button class="default-button blue-button">View Chapter</button>
+                    <button class="default-button white-button">Explore Book</button>
+                </div>
+            </div>
+            <div>
+                <div class="research-title big-text">Machine learning and coastal processes</div>
+                <div class="author-list xsmall-text">Tom Beuzen, Kristen Splinter, in</div>
+                <a class="category default-link xsmall-text">Sandy Beach Morphodynamics</a>
+                <div class="year xsmall-text">, 2020</div>
+                <div class="chapter-title medium-text">28.4 The future of machine learning in coastal processes</div>
+                <div class="content small-text">ML is a new and novel topic in the coastal field that offers powerful and useful methods for modelling coastal morphodynamics (Goldstein et al., 2019). With the size, resolution and availability of datasets describing the coast likely to continue increasing, it is reasonable to speculate that ML will become more useful and widespread in coastal applications in the future.
+                    As a standalone technique, ML has already proved to be useful for predicting coastal processes (Pape et al., 2007; Hapke and Plant, 2010; Power et al., 2018), gaining physical process insights (Gutierrez et al., 2011; Wilson et al., 2015) and efficiently emulating computationally expensive process-based coastal models (Poelhekke et al., 2016; James et al., 2018). Certainly, the use of ML will continue in the future, and will aid researchers to develop better, more efficient characterizations of coastal processes. However, we feel that a key area for the future growth of ML in coastal research and application is the integration of ML into existing workflows and models. The key idea is to combine the advantages of ML with those of existing knowledge and modelling approaches. This could include using ML models to develop better parameterizations within deterministic models to form so-called ‘hybrid models’ (Goldstein and Coco, 2015), integrating ML models with other process-based and empirical approaches within broader modelling frameworks, as has been done in the early-warning-system RISC-KIT (Van Dongeren et al., 2018) for example, or coupling ML models to data streams such as from weather forecasting databases, citizen science initiatives (Harley et al., 2019) or crowd-sourced information sources (e.g. iCoast [Liu et al., 2014]) to develop real-time, self-updating models of coastal processes.
+                    As a final remark, it should be noted that ML is a tool that facilitates our ability to understand and model coastal systems, but it is not a replacement for expert knowledge and understanding of these systems. Expert knowledge and human intuition remain key elements in the ML process, helping to guide model development and interpret results. As such, ML should be considered a tool to help improve the modelling process rather than replace it.</div>
+                <div style="margin-top: 20px;">
+                    <button class="default-button blue-button">View Chapter</button>
+                    <button class="default-button white-button">Explore Book</button>
+                </div>
+            </div>
+        </div>
+        <hr style="margin-top: 100px; margin-bottom: 20px; height: 0px; border: 1px solid #eb6500; background-color: #eb6500;">
+        <div style="text-align: center;">
+            <div class="flex" style="align-items: center; margin: 0px 0px 20px 20px;">
+                <div style="height: 55px; width: 68px; overflow: hidden; margin-top: -3px;">
+                    <img id="logo" src="./misc files/Screenshot 2024-02-16 at 00.05.10.png">
+                </div>
+                <p style="display: inline; margin-left: 20px; color:rgb(125, 125, 125); font-size: xx-small;">Icons from Font Awesome. Data is sourced from ScienceDirect. Layout is inspired by ScienceDirect</p>
+            </div>
+        </div>
+        
+    </body>
+</html>

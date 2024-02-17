@@ -1,0 +1,62 @@
+@media only screen and (max-width: 1120px) {
+    #header .flex {
+        display: flex;
+        flex-direction: column;
+    }
+    #header .flex > div {
+        flex-wrap: wrap; /* Ensure flex items wrap within the column layout */
+    }
+}
+
+@media only screen and (min-width: 1121px) {
+    #header .flex {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+#header {
+    background-color: rgb(31, 31, 31);
+    padding: 40px 35px 35px 40px;
+    color: white;
+}
+
+#header #title {
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+}
+
+#header p {
+    margin-bottom: 3px;
+    line-height: 25px;
+}
+
+#header .flex {
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+#header .button-link {
+    color: white;
+}
+
+.h_container{
+    display: inline;
+    text-align:center;
+    line-height:30px;
+}
+
+#heart{
+    font-size: 20px;
+    margin-right: 5px;
+    color: #47afeb;
+}
+
+.button-container {
+    align-items: center;
+    cursor: pointer;
+    margin-left: auto;
+}
