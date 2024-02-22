@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="navbar.css">
         <link rel="stylesheet" href="header.css">
-        <link rel="stylesheet" href="research-grid.css">
+        <link rel="stylesheet" href="research-list.css">
         <link rel="stylesheet" href="footer.css">
         <script src="https://kit.fontawesome.com/3929e16ef5.js" crossorigin="anonymous"></script>
         <script src="{% static 'network/functions.js' %}"></script>
@@ -49,9 +49,6 @@
                 </a>
                 <a class="button-link" href="./faqs.html">
                     FAQ's
-                </a>
-                <a class="button-link">
-                    Contact
                 </a>
                 <button id="sign-up" class="default-button blue-button">Get updates</button>
             </div>
@@ -132,17 +129,22 @@
                 </div>
             </div>
         </div>
-        <div id="research-grid">
-            <div>
+        
+        <div id="research-list">
+            <p style="margin-top: 35px; 
+        font-size: 40px;
+        margin-bottom: -50px;
+        font-weight: 500;">Chapters and Articles</p>
+        <hr/>
+            <div style="margin-top: -20px;">
                 <div class="research-title big-text">Machine learning in life cycle assessment</div>
                 <div class="author-list xsmall-text">Mikaela Algren, ... Amy E. Landis, in</div>
-                <a class="category default-link xsmall-text">Data Science Applied to Sustainability Analysis</a>
+                <a class="category default-link xsmall-text" href="https://www.sciencedirect.com/book/9780128179765/data-science-applied-to-sustainability-analysis">Data Science Applied to Sustainability Analysis</a>
                 <div class="year xsmall-text">, 2021</div>
                 <div class="chapter-title medium-text">Introduction to machine learning (ML)</div>
                 <div class="content small-text"><span style="text-decoration: underline;">Machine learning</span> (ML) is a statistical approach to studying and making inferences about data that utilizes a variety of algorithms suited for answering different types of questions. There are three main types of ML: supervised, unsupervised, and reinforcement learning. In supervised learning, ML algorithms can be used to model relationships between one or more independent variables and a dependent variable. In unsupervised learning, algorithms find meaningful patterns in datasets or sort data into groups. Reinforcement learning ML algorithms produce optimized plans or courses of action given a set of constraints or a reward system. These three main types of ML, supervised, unsupervised, and reinforcement learning, are described in the following sections. Other topics discussed are shallow and deep learning, how to choose between algorithm types based on the dataset or intended application, and common <span style="text-decoration: underline;">machine learning</span> tools.</div>
-                <div style="margin-top: 20px;">
-                    <button class="default-button blue-button">View Chapter</button>
-                    <button class="default-button white-button">Explore Book</button>
+                <div style="margin-top: 20px">
+                    <button class="default-button white-button" style="width: 100%">Get Access</button>
                 </div>
                 
             </div>
@@ -159,9 +161,8 @@
                     <img src="./misc files/geosciences-12-00424-ag.png" style="padding: 10px 10px; border: 2px solid black; width: 100%; height: auto">
                     <p style="font-size: xx-small; color: rgb(125, 125, 125);">&copy; to MDPI (2022)</p>
                 </div>
-                <div style="margin-top: 20px;">
-                    <button class="default-button blue-button">View Chapter</button>
-                    <button class="default-button white-button">Explore Book</button>
+                <div style="margin-top: 20px">
+                    <button class="default-button white-button" style="width: 100%">Get Access</button>
                 </div>
                     
             </div>
@@ -177,9 +178,8 @@
                     <img src="./misc files/Anemometer-Animation.gif" style="padding: 10px 10px; border: 2px solid black; width: 50%; height: auto">
                     <p style="font-size: xx-small; color: rgb(125, 125, 125); ">&copy; to Wikipedia (2007)</p>
                 </div>
-                <div style="margin-top: 20px;">
-                    <button class="default-button blue-button">View Chapter</button>
-                    <button class="default-button white-button">Explore Book</button>
+                <div style="margin-top: 20px">
+                    <button class="default-button white-button" style="width: 100%">Get Access</button>
                 </div>
             </div>
                 
@@ -194,9 +194,8 @@
                     Cracknell and Reading (2014) carried out a rigorous comparison of five ML algorithms, representing the five general learning strategies: NB statistical learning algorithms, kNN instance-based learners, RF logic-based learners, SVMs, and ANNs – Perceptrons (Kotsiantis, 2007). This was undertaken in the context of a supervised lithology classification task using widely available and spatially constrained remotely sensed geophysical data. They make a further comparison of ML algorithms based on their sensitivity to variations in the degree of spatial clustering of training data, and their response to the inclusion of explicit spatial information (spatial coordinates).
                     The work identifies RF as a good first choice algorithm for the supervised classification of lithology using remotely sensed geophysical data. RF is straightforward to train, computationally efficient, highly stable with respect to variations in classification model parameter values, and as accurate as, or substantially more accurate than, the other ML algorithms trialed. The results of the study indicate that as training data become increasingly dispersed across the region under investigation, ML algorithms' predictive accuracy improves dramatically. The use of explicit spatial information generates accurate lithology predictions but should be used in conjunction with geophysical data in order to generate geologically plausible predictions. ML algorithms, such as RF, are valuable tools for generating reliable first-pass predictions for practical geological mapping applications that combine widely available geophysical data.
                 </div>
-                <div style="margin-top: 20px;">
-                    <button class="default-button blue-button">View Chapter</button>
-                    <button class="default-button white-button">Explore Book</button>
+                <div style="margin-top: 20px">
+                    <button class="default-button white-button" style="width: 100%">Get Access</button>
                 </div>
             </div>
             <div>
@@ -233,9 +232,8 @@
                 <div style="text-align: center; margin-top: 5px;">
                     <p style="font-size: xx-small; color: rgb(125, 125, 125); ">&copy; to ScienceDirect (2023)</p>
                 </div>
-                <div style="margin-top: 20px;">
-                    <button class="default-button blue-button">View Chapter</button>
-                    <button class="default-button white-button">Explore Book</button>
+                <div style="margin-top: 20px">
+                    <button class="default-button white-button" style="width: 100%">Get Access</button>
                 </div>
             </div>
             <div>
@@ -247,10 +245,9 @@
                 <div class="content small-text">ML is a new and novel topic in the coastal field that offers powerful and useful methods for modelling coastal morphodynamics (Goldstein et al., 2019). With the size, resolution and availability of datasets describing the coast likely to continue increasing, it is reasonable to speculate that ML will become more useful and widespread in coastal applications in the future.
                     As a standalone technique, ML has already proved to be useful for predicting coastal processes (Pape et al., 2007; Hapke and Plant, 2010; Power et al., 2018), gaining physical process insights (Gutierrez et al., 2011; Wilson et al., 2015) and efficiently emulating computationally expensive process-based coastal models (Poelhekke et al., 2016; James et al., 2018). Certainly, the use of ML will continue in the future, and will aid researchers to develop better, more efficient characterizations of coastal processes. However, we feel that a key area for the future growth of ML in coastal research and application is the integration of ML into existing workflows and models. The key idea is to combine the advantages of ML with those of existing knowledge and modelling approaches. This could include using ML models to develop better parameterizations within deterministic models to form so-called ‘hybrid models’ (Goldstein and Coco, 2015), integrating ML models with other process-based and empirical approaches within broader modelling frameworks, as has been done in the early-warning-system RISC-KIT (Van Dongeren et al., 2018) for example, or coupling ML models to data streams such as from weather forecasting databases, citizen science initiatives (Harley et al., 2019) or crowd-sourced information sources (e.g. iCoast [Liu et al., 2014]) to develop real-time, self-updating models of coastal processes.
                     As a final remark, it should be noted that ML is a tool that facilitates our ability to understand and model coastal systems, but it is not a replacement for expert knowledge and understanding of these systems. Expert knowledge and human intuition remain key elements in the ML process, helping to guide model development and interpret results. As such, ML should be considered a tool to help improve the modelling process rather than replace it.</div>
-                <div style="margin-top: 20px;">
-                    <button class="default-button blue-button">View Chapter</button>
-                    <button class="default-button white-button">Explore Book</button>
-                </div>
+                    <div style="margin-top: 20px">
+                        <button class="default-button white-button" style="width: 100%">Get Access</button>
+                    </div>
             </div>
         </div>
         <hr style="margin-top: 100px; margin-bottom: 20px; height: 0px; border: 1px solid #eb6500; background-color: #eb6500;">

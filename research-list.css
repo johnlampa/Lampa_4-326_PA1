@@ -1,11 +1,15 @@
-#research-grid {
+#research-list {
     margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0px 35px;
     padding-right: 45px;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    column-gap: 50px;
-    row-gap: 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 70px;
+    width: 50%;
+    position: relative;
+    
 }
 
 .research-title {
