@@ -15,15 +15,35 @@
     }
 }
 
-
 #header {
-    background-color: rgb(31, 31, 31);
+    position: relative; /* Ensure the header serves as the positioning context */
     padding: 40px 35px 35px 40px;
     color: white;
+    height: calc(100vh - 155px); /* Adjusted height */
 }
 
+#background-image {
+    position: absolute; /* Position the background image relative to the header */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./misc files/wp8046982.webp');
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Ensure the background image is behind other content */
+}
+
+#header-text-container {
+    position: relative; /* Ensure the header text is positioned relative to the header */
+    z-index: 1; /* Ensure the header text is in front of the background image */
+}
+
+/* Your existing styles for header text and other elements */
+
+
 #header #title {
-    font-size: 50px;
+    font-size: 80px;
     margin-bottom: 10px;
     font-family: "Merriweather", serif;
     font-weight: 400;
@@ -36,7 +56,7 @@
 
 #header .flex {
     flex-wrap: wrap;
-    row-gap: 20px;
+    row-gap: 60px;
 }
 
 #header .button-link {
