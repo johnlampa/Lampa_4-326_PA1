@@ -80,3 +80,17 @@
     cursor: pointer;
     margin-left: auto;
 }
+
+@media only screen and (max-width: 768px) {
+    #tag-list a:nth-child(n+4) {
+        display: none; /* Hide tags starting from the fourth one on smaller screens */
+    }
+}
+    
+
+
+@media only screen and (max-width: 558px) {
+    #header .flex {
+        row-gap: 45px;
+    }
+}
