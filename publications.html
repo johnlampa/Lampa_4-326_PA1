@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="navbar.css">
         <link rel="stylesheet" href="header.css">
-        <link rel="stylesheet" href="faqs.css">
+        <link rel="stylesheet" href="publications.css">
         <script src="https://kit.fontawesome.com/3929e16ef5.js" crossorigin="anonymous"></script>
         <script src="{% static 'network/functions.js' %}"></script>
         <script>
@@ -109,43 +109,67 @@
     </div>
     </div>
     
-    <div id="accordion-container">
-        <p style="font-size: x-large; margin-bottom: 20px;">Frequently Asked Questions</p>
-        <button class="accordion">What is machine learning and how does it differ from rule-based programming?
-        </button>
-        <div class="panel">
-            <div class="vertical-bar"></div>
-            <div class="panel-text">Machine learning is a method of approximating a function that maps input space to output space by extracting compressed nonredundant information from data samples. (Swarnendu Ghosh et al., 2022) It differs from rule-based programming in that rule-based systems are based on hand-crafted rules that are composed to carry out intelligent tasks, while machine learning techniques attempt to formulate a function that maps input space to output space. (Swarnendu Ghosh et al., 2022) Rule-based systems are viable for small-scale problems, but for large-scale problems, the objective itself can be too complex to hand-craft appropriate rules.</div>
+    <div class="publications-container">
+        <p style="font-size: x-large; margin-bottom: 20px;">Featured Journals and Books</p>
+        <hr style="height: 2px; background-color: black; margin-bottom: 20px;"/>
+        <div class="publications-grid">
+            <div class="flex" style="padding: 15px 15px; height: max-content; align-items: center;" >
+                <img src="./misc files/S09252312.gif">
+                <div class="flex" style="flex-direction: column; row-gap: 20px; margin-left: 35px;">
+                    <p>Neurocomputing</p>
+                    <p>Journal</p>
+                </div>
+            </div>
+            <div class="flex" style="padding: 15px 15px; height: max-content; align-items: center;" >
+                <img src="./misc files/S09574174.gif">
+                <div class="flex" style="flex-direction: column; row-gap: 20px; margin-left: 35px;">
+                    <p>Expert Systems with Application</p>
+                    <p>Journal</p>
+                </div>
+            </div>
+            <div class="flex" style="padding: 15px 15px; height: max-content; align-items: center;" >
+                <img src="./misc files/S15684946.gif">
+                <div class="flex" style="flex-direction: column; row-gap: 20px; margin-left: 35px;">
+                    <p>Applied Soft Computing</p>
+                    <p>Journal</p>
+                </div>
+            </div>
+            <div class="flex" style="padding: 15px 15px; height: max-content; align-items: center;" >
+                <img src="./misc files/1-s2.0-S0031320323X00120-cov150h.gif">
+                <div class="flex" style="flex-direction: column; row-gap: 20px; margin-left: 35px;">
+                    <p>Expert Systems with Application</p>
+                    <p>Journal</p>
+                </div>
+            </div>
         </div>
-    
-        <button class="accordion">What is deep learning and how does it differ from traditional machine learning?
-        </button>
-        <div class="panel">
-            <div class="vertical-bar"></div>
-            <div class="panel-text">Deep learning is a subset of machine learning that uses interconnected neural networks to draw patterns from raw data, allowing for the creation of computational models based on multiple layers of neural networks for processing. (Amit Kumar Mishra et al., 2021) This differs from traditional machine learning, which requires feature engineering and domain expertise to convert raw data into an appropriate internal representation form. (T.M. Navamani, 2019) Deep learning frameworks provide more hidden layers and have the ability to draw meaningful abstractions of the provided input, making them representation-based algorithms.</div>
-        </div>
-    
-        <button class="accordion">What is unsupervised learning and how does it work?
-        </button>
-        <div class="panel">
-            <div class="vertical-bar"></div>
-            <div class="panel-text">Supervised learning is a machine learning process that trains a function using labelled data that has both input and output values. (Jarosław Protasiewicz et al., 2018) In supervised learning, the model learns how to create a map from a given input to a particular output based on the labelled dataset. (Michael G.K. Jones et al., 2021)  It is popular for solving classification and regression problems. Supervised learning algorithms include linear regression, logistic regression, neural networks, decision tree, support vector machine, random forest, naive Bayes, and k-nearest neighbor. (Shanta Rangaswamy et al., 2018)  Classification task predicts discrete responses, while regression techniques predict continuous responses.</div>
-        </div>
+        <p style="font-size: x-large; margin-bottom: 20px; margin-top: 100px;">Featured Authors</p>
+        <hr style="height: 2px; background-color: black; margin-bottom: 20px;"/>
+        <div class="book-container" style="padding-left: 15px;">
+            <div style="margin-bottom: 15px;">
+                <div class="default-link" style="display: inline; font-size: large;">Yang, Huanming</div>
+                <p style="font-size: small; margin-top: 10px;">BGI-Shenzhen, Shenzhen, China</p>
+                <p style="font-size: small; margin-top: 5px;">Citations: 143,106; h-index: 127; Publications:118</p>
+            </div>
+            <hr style="height: 1px; background-color: black; margin-bottom: 20px;"/>
+            <div style="margin-bottom: 15px;">
+                <div class="default-link" style="display: inline; font-size: large;">Belongie, Serge J.</div>
+                <p style="font-size: small; margin-top: 10px;">Københavns Universitet, Copenhagen, Denmark</p>
+                <p style="font-size: small; margin-top: 5px;">Citations: 73,490; h-index: 79; Publications: 5</p>
+            </div>
+            <hr style="height: 1px; background-color: black; margin-bottom: 20px;"/>
+            <div style="margin-bottom: 15px;">
+                <div class="default-link" style="display: inline; font-size: large;">Inze ́, Dirk G.</div>
+                <p style="font-size: small; margin-top: 10px;">Universiteit Gent, Ghent, Belgium</p>
+                <p style="font-size: small; margin-top: 5px;">Citations: 68,087; h-index: 142; Publications: 124</p>
+            </div>
+            <hr style="height: 1px; background-color: black; margin-bottom: 20px;"/>
+            <div style="margin-bottom: 15px;">
+                <div class="default-link" style="display: inline; font-size: large;">Xu, Zeshui</div>
+                <p style="font-size: small; margin-top: 10px;">Sichuan University, Chengdu, China</p>
+                <p style="font-size: small; margin-top: 5px;">Citations: 63,736; h-index: 128; Publications: 277</p>
+            </div>
+    </div>
 
-        <button class="accordion">What is supervised learning and how does it work?
-        </button>
-        <div class="panel">
-            <div class="vertical-bar"></div>
-            <div class="panel-text">Unsupervised learning is a machine learning technique that involves training a model on unlabelled data without any guidance or supervision. (Abisola Opeyemi Egbedina et al., 2022) The model classifies the dataset into various classes by finding commonalities between them. (Abisola Opeyemi Egbedina et al., 2022) Unsupervised learning functions exclusively on the input data without being tutored or guided, thereby learning to make sense of the data on its own. (Abisola Opeyemi Egbedina et al., 2022) The goal of unsupervised learning is to generate a model that considers the structural and distributional features of data to find more learning about the data.</div>
-        </div>
-
-        <button class="accordion">What are the different types of algorithms used in machine learning?
-        </button>
-        <div class="panel">
-            <div class="vertical-bar"></div>
-            <div class="panel-text">There are three major categories of algorithms used in machine learning: supervised learning, unsupervised learning, and reinforcement learning. (Aditya P. Mathur et al., 2022) Supervised learning algorithms require labeled data for training and include Support Vector Machine (SVM), Naïve Bayes Classification, Mathematical Regression, Decision Trees, and Artificial Neural Networks (ANN). (Hoda K. Mohamed et al., 2021) Unsupervised learning algorithms do not require labeled data and include clustering and Hidden Markov Model (HMM).</div>
-        </div>
-        
     </div>
 
     <hr style="margin-top: 100px; margin-bottom: 20px; height: 0px; border: 1px solid #eb6500; background-color: #eb6500;">
@@ -159,22 +183,6 @@
         </div>
     
     <script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-        panel.style.padding = '0';
-        } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
-        panel.style.padding = '18px';
-        } 
-    });
-    }
     </script>
 
 </body>

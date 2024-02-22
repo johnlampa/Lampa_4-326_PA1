@@ -1,0 +1,10 @@
+.publications-container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.publications-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 10px;
+}
