@@ -29,7 +29,9 @@
     }
 }
 
-
+input:focus {
+    outline: none;
+}
 
 #search-icon,
 #bar-icon {
@@ -38,7 +40,6 @@
 
 #navbar {
     height: 80px;
-    border: 1px solid black;
     align-items: center;
     padding: 0px 30px;
     justify-content: space-between;

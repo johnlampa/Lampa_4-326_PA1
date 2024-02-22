@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="faqs.css">
+        <script src="https://kit.fontawesome.com/3929e16ef5.js" crossorigin="anonymous"></script>
+        <script src="{% static 'network/functions.js' %}"></script>
+        <script>
+            function handleHover(color, iconID, textID, border) {
+                document.getElementById(iconID).style.color = color;
+                if (border) {
+                    document.getElementById(textID).style.borderBottom = '2px solid #eb6500';
+                } else {
+                    document.getElementById(textID).style.borderBottom = '2px solid #eb660000'
+                }
+            }  
+        </script>
+        <title>ML FAQs</title>
+    </head>
+<body>
+    <div id="navbar" class="flex large-screen">
+        <a href="./index.html" style="text-decoration: none;">
+            <div id="left-navbar" class="flex">
+                <div id="logo-container">
+                    <img id="logo" src="./misc files/Screenshot 2024-02-16 at 00.05.10.png">
+                </div>
+                <div style="color: #eb6500; flex-shrink: 0;" >The Dev Forum</div>
+            </div>
+        </a>
+        
+        <div id="center-navbar" class="flex">
+            <input class="search-bar" placeholder="Search Literature">
+            <button class="search-button">
+                <div id="icon-container">
+                    <i id="search-icon" class="fa fa-search"></i>
+                </div>
+            </button>
+        </div>
+        <div id="right-navbar" class="flex">
+            <a class="button-link">
+                Journals & Books
+            </a>
+            <a class="button-link" href="./faqs.html">
+                FAQ's
+            </a>
+            <a class="button-link">
+                Contact
+            </a>
+            <button id="sign-up" class="default-button blue-button">Get updates</button>
+        </div>
+    </div>
+    
+    <div id="navbar" class="flex small-screen">
+        <div id="left-navbar" class="flex">
+            <div id="logo-container">
+                <img id="logo" src="./misc files/Screenshot 2024-02-16 at 00.05.10.png">
+            </div>
+            <div style="color: #eb6500; flex-shrink: 0;" >The Dev Forum</div>
+        </div>
+        <div id="right-navbar" class="flex">
+            <div class="flex">
+                <input class="search-bar" placeholder="Search Literature">
+                <button class="search-button">
+                    <div id="icon-container">
+                        <i id="search-icon" class="fa fa-search"></i>
+                    </div>
+                </button>
+            </div>
+            <div id="icon-container">
+                <i id="bar-icon" class="fa fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+    <div id="navbar" class="flex smaller-screen">
+        <div id="left-navbar" class="flex">
+            <div id="logo-container">
+                <img id="logo" src="./misc files/Screenshot 2024-02-16 at 00.05.10.png">
+            </div>
+            <div style="color: #eb6500; flex-shrink: 0;" >The Dev Forum</div>
+        </div>
+        <div id="right-navbar" class="flex">
+            <div id="icon-container">
+                <i id="search-icon" class="fa fa-search"></i>
+            </div> 
+            <div id="icon-container">
+                <i id="bar-icon" class="fa fa-bars"></i>
+            </div>
+        </div>
+    </div>
+    <div id="header" style="background-color: #1f1f1f; height: auto; margin-bottom: 50px;">
+        <div id="header-text-container" class="flex">
+            <div style="display: inline-block">
+                <div id="title">Machine Learning</div>
+                <p style="font-size: large; line-height: 35px;">Machine learning (ML) is a process in which computing systems learn from data and use algorithms to execute tasks without being explicitly programmed.</p>
+                <p style="font-size: large; line-height: 35px; margin-bottom: 15px;">From: <span class="default-link" style="font-size: large;">ICT Express, 2022</span></p>
+            </div>
+        </div>
+        <hr />
+        <div class="button-container flex" style="margin-top: 15px;">
+            <div class="h_container" onmouseover="handleHover('#eb6500', 'heart', 'icon-button-link', true)" onmouseout="handleHover('#47afeb', 'heart', 'icon-button-link', false)">
+                <i id="heart" class="far fa-heart"></i>
+                <p id="icon-button-link" class="inline">Add to favorites</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <div id="accordion-container">
+        <p style="font-size: x-large; margin-bottom: 20px;">Frequently Asked Questions</p>
+        <button class="accordion">What is machine learning and how does it differ from rule-based programming?
+        </button>
+        <div class="panel">
+            <div class="vertical-bar"></div>
+            <div class="panel-text">Machine learning is a method of approximating a function that maps input space to output space by extracting compressed nonredundant information from data samples. (Swarnendu Ghosh et al., 2022) It differs from rule-based programming in that rule-based systems are based on hand-crafted rules that are composed to carry out intelligent tasks, while machine learning techniques attempt to formulate a function that maps input space to output space. (Swarnendu Ghosh et al., 2022) Rule-based systems are viable for small-scale problems, but for large-scale problems, the objective itself can be too complex to hand-craft appropriate rules.</div>
+        </div>
+    
+        <button class="accordion">What is deep learning and how does it differ from traditional machine learning?
+        </button>
+        <div class="panel">
+            <div class="vertical-bar"></div>
+            <div class="panel-text">Deep learning is a subset of machine learning that uses interconnected neural networks to draw patterns from raw data, allowing for the creation of computational models based on multiple layers of neural networks for processing. (Amit Kumar Mishra et al., 2021) This differs from traditional machine learning, which requires feature engineering and domain expertise to convert raw data into an appropriate internal representation form. (T.M. Navamani, 2019) Deep learning frameworks provide more hidden layers and have the ability to draw meaningful abstractions of the provided input, making them representation-based algorithms.</div>
+        </div>
+    
+        <button class="accordion">What is unsupervised learning and how does it work?
+        </button>
+        <div class="panel">
+            <div class="vertical-bar"></div>
+            <div class="panel-text">Supervised learning is a machine learning process that trains a function using labelled data that has both input and output values. (Jarosław Protasiewicz et al., 2018) In supervised learning, the model learns how to create a map from a given input to a particular output based on the labelled dataset. (Michael G.K. Jones et al., 2021)  It is popular for solving classification and regression problems. Supervised learning algorithms include linear regression, logistic regression, neural networks, decision tree, support vector machine, random forest, naive Bayes, and k-nearest neighbor. (Shanta Rangaswamy et al., 2018)  Classification task predicts discrete responses, while regression techniques predict continuous responses.</div>
+        </div>
+
+        <button class="accordion">What is supervised learning and how does it work?
+        </button>
+        <div class="panel">
+            <div class="vertical-bar"></div>
+            <div class="panel-text">Unsupervised learning is a machine learning technique that involves training a model on unlabelled data without any guidance or supervision. (Abisola Opeyemi Egbedina et al., 2022) The model classifies the dataset into various classes by finding commonalities between them. (Abisola Opeyemi Egbedina et al., 2022) Unsupervised learning functions exclusively on the input data without being tutored or guided, thereby learning to make sense of the data on its own. (Abisola Opeyemi Egbedina et al., 2022) The goal of unsupervised learning is to generate a model that considers the structural and distributional features of data to find more learning about the data.</div>
+        </div>
+
+        <button class="accordion">What are the different types of algorithms used in machine learning?
+        </button>
+        <div class="panel">
+            <div class="vertical-bar"></div>
+            <div class="panel-text">There are three major categories of algorithms used in machine learning: supervised learning, unsupervised learning, and reinforcement learning. (Aditya P. Mathur et al., 2022) Supervised learning algorithms require labeled data for training and include Support Vector Machine (SVM), Naïve Bayes Classification, Mathematical Regression, Decision Trees, and Artificial Neural Networks (ANN). (Hoda K. Mohamed et al., 2021) Unsupervised learning algorithms do not require labeled data and include clustering and Hidden Markov Model (HMM).</div>
+        </div>
+        
+    </div>
+
+    <hr style="margin-top: 100px; margin-bottom: 20px; height: 0px; border: 1px solid #eb6500; background-color: #eb6500;">
+        <div style="text-align: center;">
+            <div class="flex" style="align-items: center; margin: 0px 0px 20px 20px;">
+                <div style="height: 55px; width: 68px; overflow: hidden; margin-top: -3px;">
+                    <img id="logo" src="./misc files/Screenshot 2024-02-16 at 00.05.10.png">
+                </div>
+                <p style="display: inline; margin-left: 20px; color:rgb(125, 125, 125); font-size: small;">Icons from Font Awesome. Data is sourced from ScienceDirect. Layout is inspired by ScienceDirect</p>
+            </div>
+        </div>
+    
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+        panel.style.padding = '0';
+        } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        panel.style.padding = '18px';
+        } 
+    });
+    }
+    </script>
+
+</body>
+</html>
