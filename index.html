@@ -21,6 +21,16 @@
                     document.getElementById(textID).style.borderBottom = '2px solid #eb660000'
                 }
             }  
+            
+            function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+            }
+
         </script>
         <title>Machine Learning</title>
     </head>
@@ -34,33 +44,6 @@
                     <div style="color: #eb6500; flex-shrink: 0;" >The Dev Forum</div>
                 </div>
             </a>
-            
-            <div id="center-navbar" class="flex">
-                <input class="search-bar" placeholder="Search Literature">
-                <button class="search-button">
-                    <div id="icon-container">
-                        <i id="search-icon" class="fa fa-search"></i>
-                    </div>
-                </button>
-            </div>
-            <div id="right-navbar" class="flex">
-                <a class="button-link" href="./publications.html">
-                    Journals & Books
-                </a>
-                <a class="button-link" href="./faqs.html">
-                    FAQ's
-                </a>
-                <button id="sign-up" class="default-button blue-button">Get updates</button>
-            </div>
-        </div>
-        
-        <div id="navbar" class="flex small-screen">
-            <div id="left-navbar" class="flex">
-                <div id="logo-container">
-                    <img id="logo" src="./misc files/Screenshot 2024-02-16 at 00.05.10.png">
-                </div>
-                <div style="color: #eb6500; flex-shrink: 0;" >The Dev Forum</div>
-            </div>
             <div id="right-navbar" class="flex">
                 <div class="flex">
                     <input class="search-bar" placeholder="Search Literature">
@@ -70,25 +53,38 @@
                         </div>
                     </button>
                 </div>
-                <div id="icon-container">
-                    <i id="bar-icon" class="fa fa-bars"></i>
-                </div>
+                <a class="button-link" href="./publications.html">
+                    Journals & Books
+                </a>
+                <a class="button-link" href="./faqs.html">
+                    FAQs
+                </a>
+                <button id="sign-up" class="default-button blue-button">Get updates</button>
             </div>
         </div>
-
-        <div id="navbar" class="flex smaller-screen">
-            <div id="left-navbar" class="flex">
-                <div id="logo-container">
-                    <img id="logo" src="./misc files/Screenshot 2024-02-16 at 00.05.10.png">
+        
+        <div id="navbar" class="flex small-screen">
+            <a href="./index.html" style="text-decoration: none;">
+                <div id="left-navbar" class="flex">
+                    <div id="logo-container">
+                        <img id="logo" src="./misc files/Screenshot 2024-02-16 at 00.05.10.png">
+                    </div>
+                    <div style="color: #eb6500; flex-shrink: 0;" >The Dev Forum</div>
                 </div>
-                <div style="color: #eb6500; flex-shrink: 0;" >The Dev Forum</div>
-            </div>
+            </a>
             <div id="right-navbar" class="flex">
-                <div id="icon-container">
-                    <i id="search-icon" class="fa fa-search"></i>
-                </div> 
-                <div id="icon-container">
-                    <i id="bar-icon" class="fa fa-bars"></i>
+                <div class="mobile-container">
+                    <div class="topnav">
+                        <a href="#home" class="active">S</a>
+                        <div id="myLinks">
+                            <a href="publications.html">Journals & Books</a>
+                            <a href="faqs.html">FAQs</a>
+                        </div>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+    
                 </div>
             </div>
         </div>
@@ -276,7 +272,7 @@
             flex-direction: column;
             max-width: 300px;
             flex-wrap: wrap;
-            row-gap: 10px;
+            row-gap: 15px;
             align-self: flex-start
             " class="content-nav">
                 <p class="big-text" style="margin-bottom: 10px;">Contents</p>

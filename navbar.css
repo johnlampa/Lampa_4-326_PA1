@@ -1,30 +1,11 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1030px) {
     .large-screen {
-        display: none;
-    }
-
-    .small-screen {
-        display: none;
-    }
-}
-
-
-@media only screen and (min-width: 601px) and (max-width: 1030px) {
-    .large-screen {
-        display: none;
-    }
-
-    .smaller-screen {
         display: none;
     }
 }
 
 @media only screen and (min-width: 1031px) {
     .small-screen {
-        display: none;
-    }
-
-    .smaller-screen {
         display: none;
     }
 }
@@ -108,3 +89,46 @@ input:focus {
     position: relative;
     cursor: pointer;
 }
+
+/* Hamburger menu */
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    z-index: 1000;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    color: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+  }
+  
+  .topnav a:hover {
+    color: #eb6500;
+  }
+  
+  .active {
+    background-color: white;
+    color: white;
+  }
+
+  .fa {
+    font-size: 20px;
+  }
