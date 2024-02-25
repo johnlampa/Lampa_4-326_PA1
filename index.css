@@ -87,3 +87,8 @@ hr {
 .xsmall-text {
     font-size: 13px;
 }
+
+.nospaces {
+    transform: translate(0, 2px);
+    float: left;
+}

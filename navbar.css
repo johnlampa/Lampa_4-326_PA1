@@ -44,6 +44,7 @@ input:focus {
     padding: 0px 30px;
     justify-content: space-between;
     column-gap: 30px;
+    border-bottom: 1px solid black;
 }
 
 #navbar div {
@@ -66,7 +67,6 @@ input:focus {
 #logo-container {
     height: 55px;
     width: 68px;
-    overflow: hidden; /* Hide any overflowing parts of the image */
     margin-top: -5px;
     flex-shrink: 0;
 }
